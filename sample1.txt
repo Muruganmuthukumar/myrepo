@@ -1,2 +1,2 @@
 this is made from remote repository
-edited file
+edited from remote repository
