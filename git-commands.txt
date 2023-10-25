@@ -1,0 +1,87 @@
+TOKEN: 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
+
+https://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@github.com/Muruganmuthukumar/myrepo.git
+
+ 
+git clone https://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@github.com/Muruganmuthukumar/myrepo.git
+
+
+cd .\myrepo\
+
+git add <filename>
+
+git add .
+
+git status - untracked --> Staged --> local repository --> remote repository
+
+git reset
+
+git rm -cached <filename>
+
+git commit -m "Message for commit"
+
+
+git push -  info: please complete authentication in your browser...
+            Enumerating objects: 3, done.
+            Counting objects: 100% (3/3), done.
+            Delta compression using up to 2 threads
+            Compressing objects: 100% (2/2), done.
+            Writing objects: 100% (3/3), 230 bytes | 28.00 KiB/s, done.
+            Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+            To https://github.com/Muruganmuthukumar/myrepo.git
+            * [new branch]      main -> main
+
+
+git remote add origin https://github.com/Muruganmuthukumar/node_js.git - set the local folder to remote repository
+
+git push -u origin master - creates the origin
+
+
+
+this is used to pull the changes from github
+
+git pull -  remote: Enumerating objects: 5, done. 
+            remote: Counting objects: 100% (5/5), done.
+            remote: Compressing objects: 100% (2/2), done.
+            remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+            Unpacking objects: 100% (3/3), 698 bytes | 4.00 KiB/s, done.
+            From https://github.com/Muruganmuthukumar/myrepo
+            c328414..1516fe0  main       -> origin/main
+            Updating c328414..1516fe0
+            Fast-forward
+            sample1.txt | 1 +
+            1 file changed, 1 insertion(+)
+
+conflict -  if 2 developers working on a same directory...this conflict will occur..
+            to avoid this...everytime time we should pull before push
+
+            remote: Enumerating objects: 8, done.
+            remote: Counting objects: 100% (8/8), done.
+            remote: Compressing objects: 100% (6/6), done.
+            remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+            Unpacking objects: 100% (6/6), 1.38 KiB | 5.00 KiB/s, done.
+            From https://github.com/Muruganmuthukumar/myrepo
+            1516fe0..31cd0f8  main       -> origin/main
+            error: Your local changes to the following files would be overwritten by merge:
+            sample1.txt
+            Please commit your changes or stash them before you merge.
+            Aborting
+            Updating 1516fe0..31cd0f8
+
+
+git stash - remove the last edited lines and move it to the temporary memory
+            Saved working directory and index state WIP on main: 1516fe0 Update sample1.txt
+
+git stash pop - retrieve those local repo lines and add remote repo lines
+
+
+git log - this shows all the commits
+
+
+
+
+
+
+
+
+
